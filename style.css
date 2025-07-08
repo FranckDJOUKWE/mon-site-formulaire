@@ -1,14 +1,13 @@
-/* STYLE.CSS - FORMULAIRE STYLÉ AVEC EMOJIS & IMAGE */
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body {
-    background: linear-gradient(to right, #667eea, #764ba2);
+    background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+    color: #00ffea;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,94 +16,74 @@ body {
 }
 
 .container {
-    background-color: #fff;
-    border-radius: 16px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-    padding: 30px 25px;
-    max-width: 450px;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 14px;
+    max-width: 480px;
     width: 100%;
     text-align: center;
-    animation: fadeIn 0.7s ease-in;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to   { opacity: 1; transform: translateY(0); }
+    box-shadow: 0 0 15px #00ffea;
+    border: 1px solid #00ffea;
 }
 
 .container img {
-    width: 100px;
-    margin-bottom: 10px;
+    width: 90px;
+    margin-bottom: 20px;
+    animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
 }
 
 h1 {
-    color: #333;
-    margin-bottom: 25px;
-    font-size: 26px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #00ffea;
 }
 
 .input-group {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     text-align: left;
 }
 
 .input-group label {
-    font-weight: 600;
     display: block;
-    margin-bottom: 6px;
-    color: #555;
+    margin-bottom: 5px;
+    color: #a0fdfd;
+    font-weight: bold;
 }
 
-input,
-textarea {
+input, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 15px;
-    transition: 0.3s ease;
-}
-
-input:focus,
-textarea:focus {
-    border-color: #667eea;
-    outline: none;
-    box-shadow: 0 0 6px rgba(102, 126, 234, 0.3);
+    font-size: 14px;
+    border: 1px solid #00ffea;
+    border-radius: 6px;
+    background-color: #111;
+    color: #00ffea;
 }
 
 textarea {
-    resize: none;
     height: 100px;
+    resize: none;
 }
 
 button {
-    background-color: #667eea;
-    color: white;
+    margin-top: 10px;
+    background-color: #00ffea;
+    color: #000;
+    padding: 12px;
     border: none;
-    padding: 14px;
-    width: 100%;
+    border-radius: 6px;
     font-size: 16px;
-    border-radius: 12px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    width: 100%;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background-color: #5563c1;
-}
-
-/* Responsive */
-@media (max-width: 500px) {
-    .container {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 22px;
-    }
-
-    button {
-        font-size: 15px;
-        padding: 12px;
-    }
+    background-color: #00c9bc;
 }
