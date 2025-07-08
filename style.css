@@ -1,40 +1,36 @@
-/* style.css */
+/* style.css - décor façon Facebook */
 
 body {
-    background: linear-gradient(135deg, #1e1e2f, #3b3b6d);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #eee;
     margin: 0;
-    min-height: 100vh;
+    padding: 0;
+    background: #f0f2f5; /* gris très clair, typique de Facebook */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    min-height: 100vh;
 }
 
 .container {
-    background: rgba(30, 30, 47, 0.85);
-    padding: 30px 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-    max-width: 480px;
-    width: 100%;
+    background: white;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    max-width: 95%;
     text-align: center;
-    animation: fadeIn 0.8s ease forwards;
 }
 
 .container img {
     width: 80px;
-    margin-bottom: 15px;
-    filter: drop-shadow(0 0 6px #00ffe7);
+    margin-bottom: 20px;
 }
 
 h1 {
     margin-bottom: 25px;
+    color: #1877f2; /* bleu Facebook */
     font-weight: 700;
     font-size: 1.8rem;
-    color: #00ffe7;
-    text-shadow: 0 0 10px #00ffe7;
 }
 
 form {
@@ -42,14 +38,14 @@ form {
 }
 
 .input-group {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 label {
     display: block;
-    margin-bottom: 6px;
     font-weight: 600;
-    color: #a0e7e5;
+    margin-bottom: 6px;
+    color: #050505;
 }
 
 input[type="text"],
@@ -57,56 +53,40 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 10px 14px;
-    border: none;
-    border-radius: 8px;
-    background-color: #2a2a47;
-    color: #eee;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
     font-size: 1rem;
     box-sizing: border-box;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    background-color: #393968;
+    border-color: #1877f2;
     outline: none;
-    box-shadow: 0 0 8px #00ffe7;
+    box-shadow: 0 0 5px rgba(24, 119, 242, 0.5);
 }
 
 textarea {
     resize: vertical;
     min-height: 100px;
-    font-family: inherit;
 }
 
 button[type="submit"] {
     width: 100%;
     padding: 14px 0;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #1e1e2f;
-    background: #00ffe7;
+    background-color: #1877f2;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
     cursor: pointer;
-    box-shadow: 0 6px 10px rgba(0, 255, 231, 0.5);
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    background: #00d9c7;
-    box-shadow: 0 8px 15px rgba(0, 217, 199, 0.7);
-}
-
-p {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #00ffdd;
-    text-shadow: 0 0 6px #00ffe7;
-}
-
-@keyframes fadeIn {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
+    background-color: #145dbf;
 }
