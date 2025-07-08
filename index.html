@@ -2,114 +2,40 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Formulaire Stylé</title>
+    <title>🤖 Portail de Communication</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background: linear-gradient(to right, #667eea, #764ba2);
-            font-family: 'Segoe UI', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            background: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            max-width: 450px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .container img {
-            width: 120px;
-            margin-bottom: 15px;
-        }
-
-        h1 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .input-group {
-            margin-bottom: 15px;
-            text-align: left;
-        }
-
-        .input-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
-
-        textarea {
-            resize: none;
-            height: 100px;
-        }
-
-        button {
-            background-color: #667eea;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            font-size: 16px;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background 0.3s;
-            width: 100%;
-        }
-
-        button:hover {
-            background-color: #5563c1;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
-        <!-- Image / Sticker -->
-        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Contact emoji">
-        
-        <h1>📬 Contacte-moi</h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712100.png" alt="Robot Icon" />
+        <h1>🤖 Interface de Contact - IA Central</h1>
         <form action="https://formspree.io/f/xqabvbzl" method="POST" onsubmit="return confirmEnvoi()">
             <div class="input-group">
-                <label for="name">👤 Nom</label>
-                <input type="text" id="name" name="name" required>
+                <label for="name">🧬 Identification Humaine</label>
+                <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
             </div>
             <div class="input-group">
-                <label for="email">📧 Email</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">📡 Adresse de Transmission</label>
+                <input type="email" id="email" name="email" placeholder="you@ai.system" required>
             </div>
             <div class="input-group">
-                <label for="phone">📱 Téléphone</label>
+                <label for="phone">📞 Fréquence Téléphonique</label>
                 <input type="text" id="phone" name="phone" placeholder="672123456" required>
             </div>
             <div class="input-group">
-                <label for="subject">📝 Sujet</label>
+                <label for="subject">🧠 Sujet de l’Interférence</label>
                 <input type="text" id="subject" name="subject" required>
             </div>
             <div class="input-group">
-                <label for="message">💬 Message</label>
+                <label for="message">🗨️ Données à Transmettre</label>
                 <textarea id="message" name="message" required></textarea>
             </div>
-            <button type="submit">🚀 Envoyer</button>
+            <button type="submit">📤 Lancer Transmission</button>
         </form>
     </div>
-
     <script>
         function confirmEnvoi() {
-            alert("✅ Merci ! Votre message a bien été envoyé.");
+            alert("📡 Transmission réussie. Merci Humain !");
             return true;
         }
     </script>
