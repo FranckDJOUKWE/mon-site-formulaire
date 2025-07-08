@@ -1,9 +1,10 @@
-/* style.css - décor façon Facebook */
+/* style.css */
 
+/* Fond gris clair neutre */
 body {
     margin: 0;
     padding: 0;
-    background: #f0f2f5; /* gris très clair, typique de Facebook */
+    background: #f0f2f5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
@@ -11,6 +12,7 @@ body {
     min-height: 100vh;
 }
 
+/* Bloc blanc centré avec arrondis et ombre portée douce */
 .container {
     background: white;
     padding: 40px 50px;
@@ -21,18 +23,21 @@ body {
     text-align: center;
 }
 
+/* Image du robot */
 .container img {
     width: 80px;
     margin-bottom: 20px;
 }
 
+/* Titre bleu Facebook */
 h1 {
     margin-bottom: 25px;
-    color: #1877f2; /* bleu Facebook */
+    color: #1877f2;
     font-weight: 700;
     font-size: 1.8rem;
 }
 
+/* Formulaire */
 form {
     text-align: left;
 }
@@ -57,7 +62,7 @@ textarea {
     border-radius: 6px;
     font-size: 1rem;
     box-sizing: border-box;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
     font-family: inherit;
 }
 
@@ -74,6 +79,7 @@ textarea {
     min-height: 100px;
 }
 
+/* Bouton bleu vif avec effet hover plus foncé */
 button[type="submit"] {
     width: 100%;
     padding: 14px 0;
